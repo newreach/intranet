@@ -55,6 +55,7 @@ Project Structure
   │   │   ├── apple-touch-icon-72-precomposed.png
   │   │   └── favicon.png
   │   ├── img
+  │   │   │── nrlogo.png    
   │   └── js
   │       ├── libs
   │       │   ├── bootstrap-3.0.0.min.js
@@ -76,7 +77,8 @@ Project Structure
       │   └── main.html
       └── pages
           ├── placeholder.about.html
-          └── placeholder.home.html
+          ├── placeholder.home.html
+          └── placeholder.links.html
   ```
 
 ### Screenshots

@@ -2,7 +2,7 @@
 # Imports
 #----------------------------------------------------------------------------#
 
-from flask import Flask, render_template, request
+from flask import Flask, render_template, redirect, url_for, request
 # from flask.ext.sqlalchemy import SQLAlchemy
 import logging
 from logging import Formatter, FileHandler
@@ -49,6 +49,10 @@ def home():
 @app.route('/about')
 def about():
     return render_template('pages/placeholder.about.html')
+
+@app.route('/links')
+def links():
+    return render_template('pages/placeholder.links.html')
 
 
 @app.route('/login')
