@@ -43,16 +43,42 @@ def login_required(test):
 
 @app.route('/')
 def home():
-    return render_template('pages/placeholder.home.html')
-
-
-@app.route('/about')
-def about():
-    return render_template('pages/placeholder.about.html')
+    return render_template('pages/home.html')
+    
 
 @app.route('/links')
 def links():
-    return render_template('pages/placeholder.links.html')
+    return render_template('pages/links.html')
+
+
+@app.route('/celebration')
+def celebration():
+    return render_template('pages/celebration.html')
+
+
+@app.route('/committee_update')
+def committee_update():
+    return render_template('pages/committee_update.html')
+
+
+@app.route('/events')
+def events():
+    return render_template('pages/events.html')
+
+
+@app.route('/new_employee')
+def new_employee():
+    return render_template('pages/new_employee.html')
+
+
+@app.route('/news')
+def news():
+    return render_template('pages/news.html')
+
+
+@app.route('/snaps')
+def snaps():
+    return render_template('pages/snaps.html')
 
 
 @app.route('/login')
